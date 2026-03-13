@@ -19,4 +19,4 @@ jobs:
         aws-region: us-east-2
 
     - name: List
-      run: ls -lah
+      run: ls -lah 
