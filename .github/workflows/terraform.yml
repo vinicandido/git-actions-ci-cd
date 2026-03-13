@@ -18,5 +18,8 @@ jobs:
         role-to-assume: arn:aws:iam::165518479712:role/git-actions-role
         aws-region: us-east-2
 
-    - name: List
-      run: ls -lah 
+    - name: HashiCorp - Setup Terraform
+      uses: hashicorp/setup-terraform@v4.0.0
+
+    - name: Terraform Sera?
+      run: terraform -v
