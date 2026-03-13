@@ -30,7 +30,7 @@ permissions:
   id-token: write
 
 jobs:
-  init_and_credentials:
+  terraform-provider:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
