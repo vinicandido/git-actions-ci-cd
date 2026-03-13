@@ -15,7 +15,7 @@ jobs:
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v6.0.0
       with:
-        role-to-assume: git-actions-role
+        role-to-assume: arn:aws:iam::165518479712:role/git-actions-role
         aws-region: us-east-2
 
     - name: List
