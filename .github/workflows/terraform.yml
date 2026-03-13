@@ -7,5 +7,12 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v6.0.2
-      
-    - run: ls -lah
+
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@main # Or a specific version
+      with:
+        role-to-assume: git-actions-role
+        aws-region: us-east-2
+
+    - name: List
+      run: ls -lah
